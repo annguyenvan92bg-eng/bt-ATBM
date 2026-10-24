@@ -113,5 +113,6 @@ File mã hoá lớn hơn file gốc một lượng rất nhỏ (IV và padding),
 
 Cần giữ bí mật khoá: mất khoá hoặc dùng sai khoá thì không thể giải mã.
 
+Note : Có thể tải file code bài 1 về test trên máy để xem thực tế các file key mã hóa trong tài liệu đều là dữ liệu test nên không sợ lộ
   
 
