@@ -196,5 +196,27 @@ Chọn 2048 bit, lặp 200 lần, bấm “7. Chạy đánh giá”
 - Thư viện còn dùng CRT (dP, dQ, qInv) để giải mã nhanh hơn so với tính m^d mod n trực tiếp.
 - Vì vậy RSA chỉ dùng mã hoá dữ liệu nhỏ (khoá AES 32 byte), dữ liệu lớn mã hoá bằng AES.
 
+### Yêu cầu 8: SHA-256 (tab “8. SHA-256”)
+Trạng thái mặc định (“Hello world” so với “Hello worle”): 
+<img width="1280" height="800" alt="Ảnh chụp màn hình 2026-10-25 182104" src="https://github.com/user-attachments/assets/a5b8b7f4-17e1-427f-9e66-e95df041e358" />
+*Ảnh này cho thấy hai chuỗi kí tự Hello world so với Hello worle chỉ khác nhau 1 kí tự nhưng kết quả mã hóa cho băm khác hẳn nhau và số bit khác (khoảng 50%).
+Bấm “Đổi 1 bit của ký tự đầu” 
+<img width="1280" height="800" alt="Ảnh chụp màn hình 2026-10-25 182128" src="https://github.com/user-attachments/assets/891d13b9-1bad-4f70-bd79-e3771ab54cb9" />
+*Ảnh này thay 1 kí tự của Hello worle thành Iello worle và cho ra kết ra kết quả băm
 
+Kết luận: cho thấy dù chỉ thay đổi rất ít đầu vào nhưng kết quả băm lại thay đổi rất lớn lên tới hơn 50% giúp cho việc bảo mật thông tin đạt hiệu quả rất cao
 
+### Yêu cầu 9: Chữ ký số (tab “9. Chữ ký số”)
+
+Dữ liệu “Hợp đồng số 01/2026”
+
+Chọn RSASSA-PSS, bấm “9. Ký”. 
+<img width="1280" height="398" alt="Ảnh chụp màn hình 2026-10-25 182458" src="https://github.com/user-attachments/assets/79ddb16b-5091-4580-bf9f-1a370010267c" />
+
+Ký thêm lần nữa và bấm xác minh
+<img width="1280" height="800" alt="Ảnh chụp màn hình 2026-10-25 183022" src="https://github.com/user-attachments/assets/a67c3fa4-e738-410b-8002-a4aa9353e368" />
+*Ảnh cho thấy tuy cùng 1 dữ liệu đầu vào cùng 1 người ký (cùng private key ) nhưng với mỗi lần ký lại cho ra mã hóa khác nhau nhưng vẫn xác minh được chữ ký đó hợp lệ và có thể biết chính xác do ai ký
+
+#### Vậy phương pháp để đạt được hiệu quả đó là :
+- Dùng RSASSA-PSS: trước khi luỹ thừa bằng d, giá trị băm được đệm với 1 salt ngẫu nhiên (mỗi lần 1 salt khác nhau)
+- Người xác minh khôi phục salt từ chính chữ ký nên vẫn kiểm tra được bằng public key. Đây là cách chuẩn (RFC 8017)
