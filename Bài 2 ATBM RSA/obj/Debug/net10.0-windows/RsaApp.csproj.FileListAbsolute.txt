@@ -1,0 +1,14 @@
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\bin\Debug\net10.0-windows\RsaApp.exe
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\bin\Debug\net10.0-windows\RsaApp.deps.json
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\bin\Debug\net10.0-windows\RsaApp.runtimeconfig.json
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\bin\Debug\net10.0-windows\RsaApp.dll
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\bin\Debug\net10.0-windows\RsaApp.pdb
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\RsaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\RsaApp.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\RsaApp.AssemblyInfo.cs
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\RsaApp.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\RsaApp.dll
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\refint\RsaApp.dll
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\RsaApp.pdb
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\RsaApp.genruntimeconfig.cache
+C:\Users\Lenovo\Downloads\RsaApp\RsaApp\obj\Debug\net10.0-windows\ref\RsaApp.dll

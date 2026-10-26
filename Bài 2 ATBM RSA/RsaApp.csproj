@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- cài phiên bản net theo máy (kiểm tra bằng lệnh: dotnet version) -->
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <RootNamespace>RsaApp</RootNamespace>
+    <AssemblyName>RsaApp</AssemblyName>
+  </PropertyGroup>
+
+</Project>
